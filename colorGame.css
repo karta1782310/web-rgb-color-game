@@ -1,9 +1,35 @@
 body {
     background-color: #232323;
+    margin: 0;
+    font-family: "Montserrat", "Avenir";
 }
 
 h1 {
     color: white;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    background-color: steelblue;
+    margin: 0;
+    padding: 20px 0;
+}
+
+button {
+    border: none;
+    background: none;
+    font-weight: 700;
+    font-size: inherit;
+    text-transform: uppercase;
+    height: 100%;
+    color: steelblue;
+    letter-spacing: 1px;
+    transition: all 0.3s; /* 切換 CSS 的什麼屬性和時間 */
+}
+
+button:hover {
+    color: white;
+    background-color: steelblue;
 }
 
 .square {
@@ -12,13 +38,34 @@ h1 {
     padding-bottom: 30%;
     float: left;
     margin: 1.66%;
+    border-radius: 15%;
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s; /* Safari */
+    -moz-transition: background 0.5; /* Firefox */
+}
+
+.selected {
+    color: white;
+    background-color: steelblue;
 }
 
 #container {
-    margin: 0px auto;
+    margin: 20px auto;
     max-width: 600px;
 }
 
 #message {
-    color: white;
+    display: inline-block;
+    width: 20%;
+}
+
+#stripe {
+    background-color: white;
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+
+#colorDisplay {
+    font-size: 200%;
 }
