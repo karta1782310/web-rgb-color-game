@@ -25,6 +25,7 @@ button {
     color: steelblue;
     letter-spacing: 1px;
     transition: all 0.3s; /* 切換 CSS 的什麼屬性和時間 */
+    outline: none;
 }
 
 button:hover {
